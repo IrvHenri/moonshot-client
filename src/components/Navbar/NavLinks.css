@@ -1,0 +1,59 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  border: 2x solid red;
+}
+.nav-links .link {
+  letter-spacing: 0.15em;
+  margin-right: 1.5em;
+  color: var(--primary-font-color);
+  text-decoration: none;
+  font-weight: 800;
+  align-self: center;
+}
+
+.light-mode .link {
+  color: var(--secondary-font-color);
+}
+
+.link:hover {
+  color: var(--accent-btn-color);
+}
+.link:focus {
+  border-bottom: 2px solid var(--accent-btn-color);
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .nav-right .nav-links {
+    display: none;
+  }
+  #visible {
+    position: absolute;
+    width: 100vw;
+    height: 87vh;
+    right: 0px;
+    top: 13vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+    z-index: 100;
+    opacity: 0.9;
+    transition: all 1000ms ease;
+  }
+  #visible .link {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+
+  .my-node-enter {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  .my-node-enter-active {
+    opacity: 0.5;
+    transition: opacity 100ms;
+  }
+}

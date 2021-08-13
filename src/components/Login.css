@@ -1,0 +1,83 @@
+.login-section {
+  display: flex;
+  background-color: rgb(103, 128, 131);
+  height: 88vh;
+}
+
+.login-img {
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 88vh;
+  flex: 1;
+  background-color: rgb(1, 4, 12);
+  text-align: center;
+}
+
+.login-form-light {
+  background-color: white;
+}
+
+.login-form-text {
+  font-size: 5em;
+  margin-top: 1em;
+  color: white;
+}
+
+.login-form-text-light {
+  color: black;
+}
+
+.login-form form {
+  width: 50%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.login-form div {
+  margin-bottom: 0.5em;
+}
+
+.signup-link {
+  text-decoration: none;
+}
+
+.signup-btn {
+  margin: 1em auto;
+}
+
+.error {
+  color: rgb(252, 77, 77);
+  text-transform: uppercase;
+}
+
+.error-light {
+  color: rgb(252, 0, 0);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+
+  .login-img {
+    flex-direction: column-reverse;
+  }
+
+  .login-form-text {
+    margin-top: 0.3em;
+  }
+
+  .login-form form {
+    margin-top: 1.5em;
+    flex: 1;
+  }
+}

@@ -1,0 +1,484 @@
+.portfolio-jumbo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 5em;
+  min-height: 50vh;
+  padding: 1.5em;
+}
+
+.portfolio-signup-article {
+  color: var(--secondary-font-color);
+}
+
+.portfolio-signup-article p {
+  max-width: 500px;
+  word-wrap: break-word;
+}
+
+.portfolio-signup-article h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5em;
+}
+.portfolio-signup-article h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+.portfolio-signup-links {
+  margin-top: 1em;
+}
+
+.create-portfolio-btn {
+  margin-top: 0.5em;
+  width: 100%;
+  height: 3em;
+  font-size: 1.8em;
+}
+
+.portfolio-signup-links a {
+  margin-left: 1em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.portfolio-graph-article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.portfolio-graph-article img {
+  display: block;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+}
+
+/*Portfolio Dashboard*/
+.portfolio-dashboard {
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto;
+  width: 90%;
+  height: 85vh;
+  border-radius: 10px;
+  color: white;
+  background-color: #222;
+  padding: 1em;
+  font-family: var(--primary-font-family);
+}
+
+.portfolio-banner {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 2em;
+  background-color: #444;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.portfolio-banner-left {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.portfolio-banner-left div {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-banner-left div h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  font-family: var(--secondary-font-family);
+}
+
+.portfolio-banner-left div h2 span {
+  margin-left: 1em;
+  font-size: 1em;
+}
+
+.portfolio-banner-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+.portfolio-banner-right button {
+  height: 50%;
+  width: 15vw;
+  border-radius: 15px;
+}
+
+.portfolio-info-container {
+  display: flex;
+  flex: 1;
+}
+
+.portfolio-graph {
+  flex: 1;
+  margin-right: 2em;
+  background-color: #444;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.portfolio-coin-data {
+  flex: 1;
+  background-color: #444;
+  overflow-y: auto;
+  padding: 1em;
+  border-radius: 10px;
+  max-height: 65vh;
+}
+
+.circular-progress {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.portfolio-coin-data::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* light mode dashboard - last styling wins! */
+.light-dashboard {
+  background: #f9f9f9;
+}
+
+.light-dashboard * {
+  color: var(--secondary-font-color);
+}
+
+.light-dashboard button {
+  color: var(--primary-font-color);
+}
+.light-box {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/*Portfolio Coin Data Section*/
+.coin-asset-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1em;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  padding: 0.25em;
+}
+
+.coin-asset-row:hover {
+  background-color: #aaa;
+}
+
+.coin-asset-row-img {
+  height: 2em;
+  width: 2em;
+}
+
+.coin-asset-row-name {
+  font-size: 1em;
+  text-align: center;
+}
+
+.coin-asset-row div h1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coin-asset-btn-well {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-asset-modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.update-asset-modal h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.update-asset-modal button {
+  margin: 0.5em;
+  padding: 1em 4em;
+}
+
+.update-modal-change {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.update-modal-change h1 {
+  margin: 0;
+  padding: 0.1em 2em;
+}
+
+/*Add Coin Modal*/
+.modal {
+  position: absolute;
+  top: 15vh;
+  left: 30vw;
+  background-color: #003;
+  color: white;
+  padding: 2em 0.5em;
+  border-radius: 12px;
+  max-height: 70vh;
+  overflow-y: auto;
+  box-shadow: 0.5em 0.2em #222;
+  min-height: 20vh;
+  min-width: 40vw;
+  font-family: var(--secondary-font-family);
+}
+.modal::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.modal input {
+  height: 2em;
+}
+
+.modal input:focus {
+  outline: none;
+}
+
+.modal-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2em auto;
+}
+
+.modal-form button {
+  margin-top: 1em;
+}
+
+.modal-coin-list {
+  padding-bottom: 1em;
+  width: 80%;
+  margin: auto;
+  min-height: 70vh;
+  min-width: 40vw;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+/*Modal Coin Row*/
+.coin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 1.5em;
+  padding: 1.2em 4em;
+  transition: all 0.5s ease;
+}
+
+.coin:hover,
+.coin:focus {
+  background-color: #000;
+}
+
+.coin h1 {
+  font-size: 1.5em;
+}
+
+/*Selected Coin Modal*/
+.modal-coin-select {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80%;
+  width: 50%;
+  margin: auto;
+}
+
+.coin-select-quantity {
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.selected-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0.5em auto 2em;
+}
+
+.selected-header img {
+  height: 10vh;
+  width: 10vh;
+  margin-right: 1em;
+}
+
+.modal-coin-select input {
+  width: 100%;
+}
+
+.modal-coin-select h1 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-coin-select h1 span {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+.modal-select-btn-container {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  width: 50%;
+  justify-content: space-between;
+  margin: 2em auto 0;
+}
+
+.modal-select-btn-container button {
+  margin: 0.25em;
+}
+
+.mkt-up {
+  color: var(--market-up-color);
+}
+
+.mkt-down {
+  color: var(--market-down-color);
+}
+
+.portfolio-coin-data-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-coin-data-header p {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.portfolio-coin-data-header p:hover,
+.portfolio-coin-data-header p:focus,
+.err {
+  color: #ff5555;
+}
+
+.clear-portfolio-modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5em auto;
+  border: solid 2px black;
+}
+
+.clear-portfolio-modal h1 {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+
+.clear-portfolio-modal h2 {
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-bottom: 0.2em;
+}
+
+.clear-portfolio-modal button {
+  width: 80%;
+  margin: 0.2em auto;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-info-container {
+    flex-direction: column;
+  }
+
+  .portfolio-banner {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-banner-left div h2 {
+    font-size: 1em;
+  }
+
+  .portfolio-banner-right button {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .portfolio-graph {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .modal {
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .modal-coin-list {
+    width: 100%;
+  }
+
+  .modal-coin-select {
+    width: 90%;
+  }
+
+  .coin-asset-row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .coin-asset-row div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1em;
+    border-bottom: 0.1em solid #555;
+  }
+}
