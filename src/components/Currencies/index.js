@@ -15,9 +15,11 @@ export default function Cryptocurrencies() {
   };
   const filteredCoins =
     coins &&
-    coins.filter((coin) =>
-      coin.name.toLowerCase().includes(search.toLowerCase())
-    );
+    coins.filter((coin) => {
+      return Promise.resolve(
+        coin.name.toLowerCase().includes(search.toLowerCase())
+      );
+    });
   console.log("FILTERED COINS", filteredCoins);
   return (
     <div className="currencies-page">
