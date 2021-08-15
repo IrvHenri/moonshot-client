@@ -14,7 +14,7 @@ export default function Cryptocurrencies() {
     setSearch(e.target.value);
   };
   const filteredCoins =
-    coins &&
+    coins.length > 1 &&
     coins.filter((coin) =>
       coin.name.toLowerCase().includes(search.toLowerCase())
     );
