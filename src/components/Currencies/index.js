@@ -18,6 +18,7 @@ export default function Cryptocurrencies() {
     coins.filter((coin) =>
       coin.name.toLowerCase().includes(search.toLowerCase())
     );
+  console.log("FILTERED COINS", filteredCoins);
   return (
     <div className="currencies-page">
       {loading ? (
